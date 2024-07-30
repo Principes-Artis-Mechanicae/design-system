@@ -8,7 +8,7 @@ import pkg from "../package.json" assert { type: "json" };
 
 export default {
     // input : 번들 진입점 설정
-    input: pkg.main,
+    input: "packages/index.ts",
     output: [
         /**
          * file : bundle 된 파일을 단일 파일로 출력
@@ -16,17 +16,11 @@ export default {
          * format : "es" | "cjs" ...
          */
         {
-            dir: "dist/common",
-            format: "cjs",
-            preserveModules: false,
-            sourcemap: true,
-        },
-        {
-            dir: "dist/module",
+            dir: "dist",
             format: "es",
             sourcemap: true,
             preserveModules: true,
-            preserveModulesRoot: "package",
+            preserveModulesRoot: "packages",
         },
     ],
     plugins: [
