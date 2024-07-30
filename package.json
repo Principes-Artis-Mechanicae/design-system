@@ -1,6 +1,6 @@
 {
     "name": "principes-getp",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "GET-P Design System",
     "type": "module",
     "types": "dist/index.d.ts",
