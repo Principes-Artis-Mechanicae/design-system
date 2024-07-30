@@ -3,6 +3,8 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import typescript from "rollup-plugin-typescript2";
 import babel from "@rollup/plugin-babel";
+import svgr from "@svgr/rollup";
+import image from "@rollup/plugin-image";
 
 // import alias from "@rollup/plugin-alias";
 
@@ -39,5 +41,8 @@ export default {
         typescript({ tsconfig: "./tsconfig.json" }),
         // babel
         babel({ babelrc: "./babel.config.json", babelHelpers: "bundled" }),
+
+        svgr(),
+        image(),
     ],
 };
