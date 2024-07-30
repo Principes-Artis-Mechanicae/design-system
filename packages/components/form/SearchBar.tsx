@@ -1,6 +1,6 @@
 import { ComponentProps } from "react";
 
-import searchIcon from "@/assets/people/search.svg";
+import searchIcon from "../../assets/search.svg";
 
 import { SearchInput, SearchBarWrapper, SearchIcon, SearchIconContainer } from "./SearchBar.style";
 
