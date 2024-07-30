@@ -10,7 +10,8 @@
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rollup --config ./settings/rollup.config.mjs",
+        "build": "rollup --config rollup.config.mjs",
+        "compile": "tsc --config tsconfig.json",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
@@ -31,6 +32,7 @@
         "@rollup/plugin-alias": "^5.1.0",
         "@rollup/plugin-babel": "^6.0.4",
         "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-image": "^3.0.3",
         "@rollup/plugin-node-resolve": "^15.2.3",
         "@storybook/addon-essentials": "^8.2.6",
         "@storybook/addon-interactions": "^8.2.6",
@@ -40,6 +42,7 @@
         "@storybook/react": "^8.2.6",
         "@storybook/react-vite": "^8.2.6",
         "@storybook/test": "^8.2.6",
+        "@svgr/rollup": "^8.1.0",
         "rollup-plugin-peer-deps-external": "^2.2.4",
         "rollup-plugin-typescript2": "^0.36.0",
         "storybook": "^8.2.6",
@@ -53,6 +56,5 @@
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "react-router-dom": "^6.25.1"
-    },
-    "dependencies": {}
+    }
 }
