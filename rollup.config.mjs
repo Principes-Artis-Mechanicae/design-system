@@ -18,7 +18,12 @@ export default {
          * format : "es" | "cjs" ...
          */
         {
-            dir: "dist",
+            file: "dist/common/index.js",
+            format: "cjs",
+            sourcemap: true,
+        },
+        {
+            dir: "dist/module",
             format: "es",
             sourcemap: true,
             preserveModules: true,
