@@ -1,6 +1,7 @@
-import styled from "@emotion/styled";
+import { LabelElement } from "./Label.style";
 
-export const Label = styled.label`
-    font-size: 12px;
-    font-weight: bold;
-`;
+export interface LabelProps extends React.ComponentProps<"label"> {}
+
+export const Label = ({ children, ...props }: LabelProps) => {
+    return <LabelElement {...props}>{children}</LabelElement>;
+};

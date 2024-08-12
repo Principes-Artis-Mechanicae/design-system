@@ -1,9 +1,9 @@
 import { vertical_center } from "../../styles/utils";
 
-import { ISearchBar } from "./SearchBar";
+import { SearchBarProps } from "./SearchBar";
 import styled from "@emotion/styled";
 
-export const SearchBarWrapper = styled.div<ISearchBar>`
+export const SearchBarWrapper = styled.div<SearchBarProps>`
     position: relative;
 
     width: ${(props) => props.width};

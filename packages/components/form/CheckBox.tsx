@@ -1,17 +1,17 @@
 import React, { forwardRef } from "react";
 
-import { Check, CheckBoxLabel } from "./CheckBox.style";
+import { CheckBoxElement, CheckBoxLabel } from "./CheckBox.style";
 
-export interface ICheckBox {
+export interface CheckBoxProps extends React.ComponentProps<"input"> {
     width: string;
     height: string;
     children?: React.ReactNode;
 }
 
-export const CheckBox = forwardRef<HTMLInputElement, ICheckBox>(({ width, height, children }, ref) => {
+export const CheckBox = forwardRef<HTMLInputElement, CheckBoxProps>(({ children, ...props }, ref) => {
     return (
         <CheckBoxLabel>
-            <Check ref={ref} type="checkbox" width={width} height={height}></Check>
+            <CheckBoxElement ref={ref} type="checkbox" {...props}></CheckBoxElement>
             {children}
         </CheckBoxLabel>
     );
