@@ -12,7 +12,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "rm -rf dist && rollup --config rollup.config.mjs",
-        "compile": "tsc --config tsconfig.json --noEmit",
+        "compile": "tsc --noEmit",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
