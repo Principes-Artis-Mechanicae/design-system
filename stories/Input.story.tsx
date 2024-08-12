@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "../packages/components/form/Button";
 import { Input } from "../packages/components/form/Input";
 import { css } from "@emotion/react";
@@ -56,6 +57,7 @@ export const Verify: Story = {
         return (
             <Input width={args.width} height={args.height} placeholder="인증번호를 입력해주세요">
                 <div
+                    // @ts-ignore
                     css={css`
                         display: flex;
                         align-items: center;
