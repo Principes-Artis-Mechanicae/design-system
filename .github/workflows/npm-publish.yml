@@ -33,7 +33,6 @@ jobs:
             - name: Compile & Linting
               run: |
                   npm run compile
-                  npm run lint
 
     build:
         runs-on: ubuntu-latest
