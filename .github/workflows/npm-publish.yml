@@ -1,7 +1,7 @@
 name: "Publish to NPM"
 
 on:
-    pull_reqeust:
+    pull_request:
         branches:
             - "main"
         types:
@@ -9,7 +9,7 @@ on:
     push:
         branches:
             - "main"
-    workflow_disptach:
+    workflow_dispatch:
 
 env:
     NODE_VERSION: 22
