@@ -7,6 +7,7 @@ export { Input } from "./components/form/Input";
 export { Label } from "./components/form/Label";
 export { SearchBar } from "./components/form/SearchBar";
 export { TextArea } from "./components/form/TextArea";
+export { RadioGroup, RadioItem } from "./components/form/Radio";
 
 // components/helper
 export { withProviders } from "./components/helper/withProviders";
