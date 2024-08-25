@@ -5,6 +5,8 @@ export const DropDownWrapper = styled.div<Pick<DropDownProps, "width">>`
     position: relative;
 
     width: ${(props) => props.width};
+
+    background-color: #fff;
 `;
 
 export const DropDownContainer = styled.div<{ height: string; isOpened: boolean }>`
@@ -59,6 +61,8 @@ export const DropDownItemsContainer = styled.div<{ isOpened: boolean; maxHeight:
     }};
 
     transition: max-height 0.3s ease-in-out;
+
+    background-color: #fff;
 `;
 
 export const DropDownItemWrapper = styled.div<{ active: boolean }>`
