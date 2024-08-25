@@ -10,7 +10,7 @@ export interface ITextAreaElement {
 }
 
 export const TextAreaContainer = styled.div`
-    width: 700px;
+    width: auto;
 
     display: flex;
 
