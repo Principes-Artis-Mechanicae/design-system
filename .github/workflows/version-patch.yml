@@ -26,5 +26,7 @@ jobs:
 
             - name: Bump Version (Patch)
               run: |
+                  git config --global user.email "getp020506@gmail.com"
+                  git config --global user.name "principes-getp"
                   npm version patch
                   git push origin main
