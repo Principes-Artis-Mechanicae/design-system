@@ -1,6 +1,5 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { RadioGroup, RadioItem } from "../packages/components/form/Radio";
+import { RadioGroup, RadioItem } from "../components/form/Radio";
 
 const meta = {
     title: "Form/Radio",

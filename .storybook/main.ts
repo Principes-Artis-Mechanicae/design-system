@@ -3,9 +3,9 @@ import path from "path";
 
 const config = {
     stories: [
-        "../stories/**/*.mdx",
-        "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-        "../stories/**/*.story.@(js|jsx|mjs|ts|tsx)",
+        "../packages/stories/**/*.mdx",
+        "../packages/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+        "../packages/stories/**/*.story.@(js|jsx|mjs|ts|tsx)",
     ],
 
     addons: [

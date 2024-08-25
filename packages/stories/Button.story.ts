@@ -1,4 +1,4 @@
-import { Button } from "../packages/components/form/Button";
+import { Button } from "../components/form/Button";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
