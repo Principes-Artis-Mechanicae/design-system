@@ -1,4 +1,4 @@
-name: Bump Version (Patch)
+name: Bump Version (Major)
 
 on:
     workflow_dispatch:
@@ -38,9 +38,9 @@ jobs:
                   echo "user_name=$user_name" >> $GITHUB_ENV
                   echo "user_email=$user_email" >> $GITHUB_ENV
 
-            - name: Bump Version (Patch)
+            - name: Bump Version (Major)
               run: |
                   git config --global user.email "${{ env.user_email }}"
                   git config --global user.name "${{ env.user_name }}"
-                  npm version patch
+                  npm version major
                   git push origin main --tag
