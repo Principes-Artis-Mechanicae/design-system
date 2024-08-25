@@ -1,26 +1,23 @@
 name: "Publish to NPM"
 
 on:
-    pull_request:
-        branches:
-            - "main"
-        types:
-            - "closed"
-    workflow_dispatch:
+    push:
+        tags:
+            - "*"
 
 env:
     NODE_VERSION: 22
     NPM_REGISTRY: https://registry.npmjs.org/
 
 jobs:
-    postbuild:
+    post-build:
         runs-on: ubuntu-latest
 
         steps:
             - name: Code Checkout
               uses: actions/checkout@v4
 
-            - name: SetUp Node
+            - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: ${{env.NODE_VERSION}}
@@ -29,19 +26,17 @@ jobs:
               run: npm ci
 
             - name: Compile & Linting
-              run: |
-                  npm run compile
+              run: npm run compile
 
     build:
         runs-on: ubuntu-latest
-
-        needs: postbuild
+        needs: post-build
 
         steps:
             - name: Code Checkout
               uses: actions/checkout@v4
 
-            - name: SetUp Node
+            - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: ${{env.NODE_VERSION}}
@@ -50,10 +45,10 @@ jobs:
             - name: Install Dependencies
               run: npm ci
 
-            - name: Build Packages
+            - name: Build
               run: npm run build
 
-            - name: Publish Package to NPM
+            - name: Publish to NPM
               run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
