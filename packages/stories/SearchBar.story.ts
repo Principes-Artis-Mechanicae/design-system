@@ -1,4 +1,4 @@
-import { SearchBar } from "../packages/components/form/SearchBar";
+import { SearchBar } from "../components/form/SearchBar";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

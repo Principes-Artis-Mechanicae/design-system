@@ -50,10 +50,6 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
 
-        // "baseUrl": "packages",
-        // "paths": {
-        //     "@/*": ["*"]
-        // },
         "typeRoots": ["./node_modules/@types", "@types"]
     },
     "include": ["packages", "./packages/index.d.ts"]

@@ -1,6 +1,5 @@
-import React from "react";
-import { Button } from "../packages/components/form/Button";
-import { Input } from "../packages/components/form/Input";
+import { Button } from "../components/form/Button";
+import { Input } from "../components/form/Input";
 import { css } from "@emotion/react";
 import type { Meta, StoryObj } from "@storybook/react";
 
