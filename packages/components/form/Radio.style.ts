@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 import { RadioContainerProps } from "./Radio";
 
+import checkActive from "../../assets/btn-check__active.svg";
+import checkInActive from "../../assets/btn-check__inactive.svg";
+
 import { vertical_center } from "../../styles/utils";
 
 export const RadioGroupWrapper = styled.div<RadioContainerProps>`
@@ -46,14 +49,14 @@ export const RadioItemElement = styled.input`
 
 export const RadioItemLabel = styled.label`
     width: 100%;
-    height: 100%;
+    height: inherit;
     display: flex;
     align-items: center;
 
     margin-left: 40px;
 
     & > :checked::before {
-        content: url("packages/assets/btn-check__active.svg");
+        content: url(${checkActive});
 
         ${vertical_center};
         width: 20px;
@@ -64,7 +67,7 @@ export const RadioItemLabel = styled.label`
     }
 
     & > :not(:checked)::before {
-        content: url("packages/assets/btn-check__inactive.svg");
+        content: url(${checkInActive});
 
         ${vertical_center};
         width: 20px;
