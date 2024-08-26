@@ -8,6 +8,7 @@ export { SearchBar } from "./components/form/SearchBar";
 export { TextArea } from "./components/form/TextArea";
 export { RadioGroup, RadioItem } from "./components/form/Radio";
 export { DropDown, DropDownItem } from "./components/form/DropDown";
+export { DatePicker } from "./components/form/DatePicker";
 
 // helper
 export { withProviders } from "./components/helper/withProviders";
