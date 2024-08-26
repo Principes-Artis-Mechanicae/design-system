@@ -34,7 +34,7 @@ export const TextAreaElement = styled.textarea<ITextAreaElement>`
 
     border: none;
     border-radius: 12px;
-    padding: 15px 10px;
+    padding: 10px 0px;
 
     resize: none;
     line-height: 200%;
